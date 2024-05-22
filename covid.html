@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Covid-19 data Analytics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Covid-19 data Analytics</h1>
+						<p>Welcome to my project</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="images/covid.jpeg" alt="" /></span>
+								<h2>Introduction</h2>
+								<p>
+				
+									In today's data-driven world, HR analytics plays a crucial role in understanding workforce dynamics and making informed decisions. By analyzing various HR metrics, organizations can identify trends, optimize training programs, and enhance overall employee performance. Let's delve into three insightful graphs that shed light on the interplay between training, department performance, and employee demographics.</p>
+								<h2>Graph -1 </h2>
+								<span class="image main"><img src="images/c-1.png" alt="" /></span>
+
+								<p>This line chart highlights the distribution of training sessions across different departments. The y-axis represents the number of trainings, while the x-axis lists various departments.
+
+									Analytics and Procurement departments show a moderate number of trainings, with each having over 3,000 sessions.
+									<p>The code provided loads data into a Pandas DataFrame from a CSV file stored at
+                                        the URL ,The essential statistics of the 'Age' column are then printed using Pandas
+                                        DataFrame's describe() method.</p>
+                                        The distribution of the 'Age' column can be seen using a histogram produced with
+                                        Matplotlib. Using the 'bins' argument of the 'plt.hist()' function, the 'Age' values
+                                        have been divided into 20 bins. The x-axis label is "Age," while the y-axis label is
+                                        "Frequency." Finally, using the 'plt.show()' method, the histogram is presented. </p>
+									<h2>Graph -2 </h2>
+								<span class="image main"><img src="images/c-2.png" alt="" /></span>
+
+								<p>The code slices DataFrame df to get only the first 50 rows, groups the data by
+                                    state, calculates the sum of the population column for each state, and creates a
+                                    bar chart using Matplotlib with the x-axis representing the states and the y-axis
+                                    representing the population.The chart title is set to 'Population by State (First 50
+                                    rows)', the x-axis and y-axis labels are set to 'State' and 'Population', and the chart
+                                    is displayed using the plt.show() function 
+                                    </p>
+									<h2>Graph -3 </h2>
+									<span class="image main"><img src="images/c-3.png" alt="" /></span>
+	
+									<p>The code creates a new DataFrame 'date_data' that includes only
+                                        the'submission_date' and 'tot_cases' columns from the original DataFrame 'df'.
+                                        The data is grouped by'submission_date' and the 'tot_cases' column is summed
+                                        up using the groupby() function. An interactive line chart is created using the
+                                        plotly library with the'submission_date' column as the x-axis and the 'tot_cases'
+                                        column as the y-axis. The chart title is set using the 'title' variable and the chart
+                                        layout is customized using the 'update_layout()' function. Finally, the chart is
+                                        displayed using 'fig.show()' to visualize the total cases by date in an interactive
+                                        line chart. </p>							
+							</section>
+
+					</div>
+
+				
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
