@@ -32,42 +32,24 @@
 								<h2>Introduction</h2>
 								<p>
 				
-									In today's data-driven world, HR analytics plays a crucial role in understanding workforce dynamics and making informed decisions. By analyzing various HR metrics, organizations can identify trends, optimize training programs, and enhance overall employee performance. Let's delve into three insightful graphs that shed light on the interplay between training, department performance, and employee demographics.</p>
+									This project explores the analysis of large-scale COVID-19 epidemiological data using various data science techniques, focusing on frequent pattern mining, contrast pattern mining, and K-Means clustering. The goal is to uncover significant insights regarding the spread, impact, and trends of COVID-19 based on demographic factors like gender, age, and state.</p>
 								<h2>Graph -1 </h2>
-								<span class="image main"><img src="images/c-1.png" alt="" /></span>
+								<span class="image main"><img src="Covid-graph-1.png" alt="" /></span>
 
-								<p>This line chart highlights the distribution of training sessions across different departments. The y-axis represents the number of trainings, while the x-axis lists various departments.
+								<p>
 
-									Analytics and Procurement departments show a moderate number of trainings, with each having over 3,000 sessions.
-									<p>The code provided loads data into a Pandas DataFrame from a CSV file stored at
-                                        the URL ,The essential statistics of the 'Age' column are then printed using Pandas
-                                        DataFrame's describe() method.</p>
-                                        The distribution of the 'Age' column can be seen using a histogram produced with
-                                        Matplotlib. Using the 'bins' argument of the 'plt.hist()' function, the 'Age' values
-                                        have been divided into 20 bins. The x-axis label is "Age," while the y-axis label is
-                                        "Frequency." Finally, using the 'plt.show()' method, the histogram is presented. </p>
+									The histogram provides insights into the distribution of ages within the dataset. The x-axis represents different age groups, while the y-axis indicates the frequency of occurrences for each age range. By analyzing the shape of the histogram, we can determine whether the data is normally distributed, skewed towards younger or older individuals, or contains any outliers. A peak in the histogram suggests the most common age group, while gaps or isolated bars may indicate missing values or anomalies. This visualization helps in understanding the overall age demographics and identifying any patterns or irregularities in the data.
+									
+									</p>
 									<h2>Graph -2 </h2>
-								<span class="image main"><img src="images/c-2.png" alt="" /></span>
+								<span class="image main"><img src="Covid-graph-2.png" alt="" /></span>
 
-								<p>The code slices DataFrame df to get only the first 50 rows, groups the data by
-                                    state, calculates the sum of the population column for each state, and creates a
-                                    bar chart using Matplotlib with the x-axis representing the states and the y-axis
-                                    representing the population.The chart title is set to 'Population by State (First 50
-                                    rows)', the x-axis and y-axis labels are set to 'State' and 'Population', and the chart
-                                    is displayed using the plt.show() function 
+								<p>This bar chart visualizes the total population for each state based on the first 50 rows of the dataset. The x-axis represents the different states, while the y-axis shows the total population for each state by summing the values in the Population column<p>From the chart, we can observe which states have the highest and lowest populations within this subset of data. If certain states have significantly taller bars, it indicates a higher concentration of population in those states. The rotation of x-axis labels ensures clarity in reading the state names. However, since the data is limited to the first 50 rows, the insights might not represent the full dataset's actual distribution.</p> 
                                     </p>
 									<h2>Graph -3 </h2>
-									<span class="image main"><img src="images/c-3.png" alt="" /></span>
+									<span class="image main"><img src="Covid-graph-3.png" alt="" /></span>
 	
-									<p>The code creates a new DataFrame 'date_data' that includes only
-                                        the'submission_date' and 'tot_cases' columns from the original DataFrame 'df'.
-                                        The data is grouped by'submission_date' and the 'tot_cases' column is summed
-                                        up using the groupby() function. An interactive line chart is created using the
-                                        plotly library with the'submission_date' column as the x-axis and the 'tot_cases'
-                                        column as the y-axis. The chart title is set using the 'title' variable and the chart
-                                        layout is customized using the 'update_layout()' function. Finally, the chart is
-                                        displayed using 'fig.show()' to visualize the total cases by date in an interactive
-                                        line chart. </p>							
+									<p>This scatter plot visualizes the relationship between Population and Total Cases in the dataset. Each point represents a data entry, with the x-axis corresponding to the population size and the y-axis indicating the number of total cases.<P>From this plot, we can analyze whether there is a correlation between population size and the number of cases. If the points form an upward trend, it suggests that higher population states tend to have more cases. If the data points are widely dispersed without a clear pattern, it indicates a weaker correlation. The axis limits ensure readability, and the number formatting improves clarity by making large values easier to interpret.</P></p>							
 							</section>
 
 					</div>
