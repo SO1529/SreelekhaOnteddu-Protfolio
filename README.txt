@@ -1,6 +1,6 @@
 
 
-# **Srilika Onteddu - Data Analyst Portfolio**
+# __Srilika Onteddu - Data Analyst Portfolio__
 
 Welcome to my GitHub portfolio! 
 I'm **Srilika Onteddu**, a **Data Analyst** with expertise in **SQL, Python, Power BI, Tableau, and Data Visualization**. I specialize in transforming raw data into actionable insights and building data-driven solutions that optimize business performance.
