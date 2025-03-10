@@ -1,12 +1,10 @@
-
-
-# __Srilika Onteddu - Data Analyst Portfolio__
+## **Srilika Onteddu - Data Analyst Portfolio**
 
 Welcome to my GitHub portfolio! 
 I'm **Srilika Onteddu**, a **Data Analyst** with expertise in **SQL, Python, Power BI, Tableau, and Data Visualization**. I specialize in transforming raw data into actionable insights and building data-driven solutions that optimize business performance.
 MY PROTFOLIO : https://so1529.github.io/SreelekhaOnteddu-Protfolio/
 
----
+
 
 ## About Me
 
@@ -16,7 +14,6 @@ MY PROTFOLIO : https://so1529.github.io/SreelekhaOnteddu-Protfolio/
 - Skilled in SQL, Python, Power BI, Tableau, and ETL processes.
 
 
----
 
 ## Work Experience  
 
@@ -29,7 +26,7 @@ MY PROTFOLIO : https://so1529.github.io/SreelekhaOnteddu-Protfolio/
 - Implemented data pipelines, feature engineering, and model evaluation techniques.  
 - Collaborated with cross-functional teams using Jira, Confluence, and Slack for project management.  
 
----
+
 
 ### **Graduate Teaching Assistant - Secure E-Commerce**  
 **University of North Texas, Denton, Texas**  
@@ -39,7 +36,7 @@ MY PROTFOLIO : https://so1529.github.io/SreelekhaOnteddu-Protfolio/
 - Provided one-on-one tutoring and assisted in grading assignments and exams.  
 - Helped students understand cryptography protocols and web technologies like HTML, CSS, and web frameworks.  
 
----
+
 
 ### Associate Software Engineer - Data  
 **Legato Health Technology, Hyderabad, India**  
@@ -51,7 +48,7 @@ MY PROTFOLIO : https://so1529.github.io/SreelekhaOnteddu-Protfolio/
 - Improved reporting efficiency by 40% through interactive visualizations and automated reporting.  
 - Ensured data accuracy through SQL validation and consistent data pipelines.  
 
----
+
 
 ### **Associate Software Engineer**  
 **Virtusa, Hyderabad, India**  
@@ -60,7 +57,7 @@ MY PROTFOLIO : https://so1529.github.io/SreelekhaOnteddu-Protfolio/
 - Designed and implemented **RESTful APIs for seamless system integration, reducing integration time by 20%.  
 - Collaborated with cross-functional teams to deliver customized software solutions, boosting client satisfaction by 25%.  
 - Ensured code quality through diligent reviews and adherence to best practices.  
----
+
 
 
 ## **Skills**
@@ -83,11 +80,10 @@ MY PROTFOLIO : https://so1529.github.io/SreelekhaOnteddu-Protfolio/
 - **LinkedIn:** [linkedin.com/in/srilika-onteddu](https://www.linkedin.com/in/srilika-onteddu/)  
 - **Portfolio Website:** [https://so1529.github.io/SreelekhaOnteddu-Protfolio/](#)
 
----
 
 ## **Let's Connect!**
 
 I'm always open to collaborating on **data-driven projects, business intelligence solutions, or data analysis tasks**. Feel free to reach out to me or connect with me on **LinkedIn**. I look forward to working on meaningful and impactful projects.
 
----
+
 
