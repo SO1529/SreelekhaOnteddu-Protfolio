@@ -2,6 +2,7 @@
 
 Welcome to my GitHub portfolio! 
 I'm **Sreelekha Onteddu**, a **Data Analyst** and a **Software Engineer** with expertise in **SQL, Python, Java, Power BI, Tableau, and Data Visualization**. I specialize in transforming raw data into actionable insights and building data-driven solutions that optimize business performance.
+
 MY PROTFOLIO : https://so1529.github.io/SreelekhaOnteddu-Protfolio/
 
 
@@ -54,7 +55,7 @@ MY PROTFOLIO : https://so1529.github.io/SreelekhaOnteddu-Protfolio/
 **Virtusa, Hyderabad, India**  
 **Jan 2022 - Apr 2022**  
 - Developed scalable applications using C++, Java, and Angular to improve system efficiency by 30%.  
-- Designed and implemented **RESTful APIs for seamless system integration, reducing integration time by 20%.  
+- Designed and implemented RESTful APIs for seamless system integration, reducing integration time by 20%.  
 - Collaborated with cross-functional teams to deliver customized software solutions, boosting client satisfaction by 25%.  
 - Ensured code quality through diligent reviews and adherence to best practices.  
 
@@ -76,7 +77,7 @@ MY PROTFOLIO : https://so1529.github.io/SreelekhaOnteddu-Protfolio/
 
 ## **Contact Me**
 
-- **Email:** [sreelekha.onteddu@outlook.com](mailto:sreelekha.onteddu@outlook.com)  
+- **Email:** [sreelekha1529@gmail.com](mailto:sreelekha1529@gmail.com)  
 - **LinkedIn:** [linkedin.com/in/srilika-onteddu](https://www.linkedin.com/in/srilika-onteddu/)  
 - **Portfolio Website:** [https://so1529.github.io/SreelekhaOnteddu-Protfolio/](#)
 
