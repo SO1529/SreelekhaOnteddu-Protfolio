@@ -1,17 +1,191 @@
-<h2>AI Resume Chatbot (RAG)</h2>
-<span class="image main"><img src="images/chatbot-demo.png" alt="AI Resume Chatbot" /></span>
-<p>
-This project converts my résumé into an intelligent chatbot that answers questions about my skills, experience, and projects. It uses embeddings with FAISS/OpenSearch to retrieve relevant information and an LLM (OpenAI/AWS Bedrock) to generate answers.
-</p>
-<ul>
-  <li>Tech Stack: Python, OpenAI API / AWS Bedrock, FAISS / OpenSearch, Next.js</li>
-  <li>Key Features:
-    <ul>
-      <li>Ask questions about my resume</li>
-      <li>Interactive web chat interface</li>
-      <li>Contextual answers from my resume</li>
-    </ul>
-  </li>
-  <li>Live Demo: <a href="https://your-demo-link.com">Try the Chatbot</a></li>
-  <li>GitHub: <a href="https://github.com/yourusername/resume-chatbot">View Code</a></li>
-</ul>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>AI Resume Chatbot - Sreelekha Onteddu</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+    <div id="wrapper">
+
+        <header id="header">
+            <h1>AI Resume Chatbot</h1>
+            <p>Interactive Resume Assistant Built with AWS</p>
+        </header>
+
+        <div id="main">
+
+            <section id="content" class="main">
+                
+                <!-- Hero Image -->
+                <span class="image main"><img src="images/chatbot-hero.jpg" alt="AI Chatbot Project" /></span>
+                
+                <!-- Overview -->
+                <h2>About This Project</h2>
+                <p>I created an AI-powered chatbot that lives on my resume website and answers questions about my background, skills, and experience. Instead of visitors reading through a static resume, they can simply ask questions and get instant, conversational responses.</p>
+
+                <blockquote>Ask the chatbot "What are Sreelekha's Gen AI skills?" or "Tell me about her projects" and get immediate, accurate answers drawn directly from my resume.</blockquote>
+
+                <!-- What It Does -->
+                <div class="spotlight">
+                    <div class="content">
+                        <h2>What It Does</h2>
+                        <p>The chatbot serves as an interactive resume assistant that:</p>
+                        <ul>
+                            <li>Answers questions about my education and degrees</li>
+                            <li>Explains my technical skills in Gen AI and AWS</li>
+                            <li>Describes my projects and achievements</li>
+                            <li>Shares my certifications and career goals</li>
+                            <li>Provides contact information</li>
+                        </ul>
+                        <p>It's available 24/7 for recruiters and visitors worldwide.</p>
+                    </div>
+                    <span class="image"><img src="images/chatbot-demo.jpg" alt="Chatbot Demo" /></span>
+                </div>
+
+                <hr />
+
+                <!-- How I Built It -->
+                <h2>How I Built It</h2>
+                
+                <h3>AWS Services Used</h3>
+                <p>I leveraged AWS cloud infrastructure to create a scalable, serverless solution:</p>
+                <ul>
+                    <li><strong>AWS Lambda</strong> - Runs the chatbot logic without managing servers</li>
+                    <li><strong>API Gateway</strong> - Handles requests from the website to the chatbot</li>
+                    <li><strong>Amazon Bedrock</strong> - Powers the AI with large language models</li>
+                    <li><strong>S3</strong> - Stores my resume data and website files</li>
+                    <li><strong>DynamoDB</strong> - Logs conversations for improvements</li>
+                </ul>
+
+                <span class="image main"><img src="images/aws-architecture.jpg" alt="AWS Architecture" /></span>
+
+                <h3>Development Process</h3>
+                <p><strong>1. Data Preparation:</strong> I structured my resume into a knowledge base that the AI can easily reference.</p>
+                <p><strong>2. Prompt Engineering:</strong> I crafted specific prompts to ensure the chatbot stays professional and accurate.</p>
+                <p><strong>3. API Integration:</strong> Connected the frontend chat widget to AWS Lambda functions.</p>
+                <p><strong>4. Testing:</strong> Asked dozens of test questions to ensure accuracy and refine responses.</p>
+                <p><strong>5. Deployment:</strong> Deployed everything on AWS with automatic scaling.</p>
+
+                <hr />
+
+                <!-- Key Challenges -->
+                <h2>Challenges I Solved</h2>
+                
+                <p><strong>Keeping responses accurate:</strong> I implemented strict controls to ensure the chatbot only shares verified information from my resume—no hallucinations or made-up details.</p>
+                
+                <p><strong>Making it fast:</strong> Optimized the Lambda functions and prompts so responses come back in under 2 seconds.</p>
+                
+                <p><strong>Managing costs:</strong> Used serverless architecture to keep AWS costs minimal while maintaining performance.</p>
+
+                <hr />
+
+                <!-- Technologies -->
+                <h2>Technologies & Tools</h2>
+                <div class="row">
+                    <div class="col-6 col-12-small">
+                        <ul>
+                            <li>Python (Backend)</li>
+                            <li>LangChain (AI Framework)</li>
+                            <li>AWS Lambda</li>
+                            <li>AWS API Gateway</li>
+                            <li>Amazon Bedrock</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-12-small">
+                        <ul>
+                            <li>JavaScript (Frontend)</li>
+                            <li>HTML/CSS</li>
+                            <li>AWS S3</li>
+                            <li>AWS DynamoDB</li>
+                            <li>Prompt Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <span class="image main"><img src="images/tech-stack.jpg" alt="Technology Stack" /></span>
+
+                <hr />
+
+                <!-- What I Learned -->
+                <h2>What I Learned</h2>
+                <ul>
+                    <li>Building production-ready Gen AI applications from scratch</li>
+                    <li>Integrating LLMs with cloud infrastructure</li>
+                    <li>Designing serverless architectures on AWS</li>
+                    <li>Prompt engineering for specific use cases</li>
+                    <li>Creating user-friendly AI interfaces</li>
+                    <li>Optimizing costs while maintaining performance</li>
+                </ul>
+
+                <hr />
+
+                <!-- Results -->
+                <h2>Project Outcomes</h2>
+                <ul class="features">
+                    <li style="text-align: center;">
+                        <h3 style="font-size: 2.5em; color: #8cc9f0;">24/7</h3>
+                        <p>Always available to answer visitor questions</p>
+                    </li>
+                    <li style="text-align: center;">
+                        <h3 style="font-size: 2.5em; color: #8cc9f0;">&lt;2s</h3>
+                        <p>Average response time</p>
+                    </li>
+                    <li style="text-align: center;">
+                        <h3 style="font-size: 2.5em; color: #8cc9f0;">100%</h3>
+                        <p>Accuracy from verified resume data</p>
+                    </li>
+                </ul>
+
+                <hr />
+
+                <!-- CTA -->
+                <div style="text-align: center; padding: 3em 0;">
+                    <h2>Try the Chatbot</h2>
+                    <p>Visit my resume website and ask the chatbot anything about my background</p>
+                    <ul class="actions special" style="justify-content: center;">
+                        <li><a href="#" class="button primary large">Visit Resume Website</a></li>
+                    </ul>
+                    <br />
+                    <ul class="actions special" style="justify-content: center;">
+                        <li><a href="index.html" class="button">← Back to Portfolio</a></li>
+                    </ul>
+                </div>
+
+            </section>
+
+        </div>
+
+        <footer id="footer">
+            <section>
+                <h2>SREELEKHA ONTEDDU</h2>
+                <p>Gen AI Engineer</p>
+            </section>
+            <section>
+                <h2>Contact Information</h2>
+                <dl class="alt">
+                    <dt>Address</dt>
+                    <dd>2311 Stella St &bull; Denton, TN 76201 &bull; USA</dd>
+                    <dt>Phone</dt>
+                    <dd>940-331-2829</dd>
+                    <dt>Email</dt>
+                    <dd><a href="mailto:sreelekha1529@gmail.com">sreelekha1529@gmail.com</a></dd>
+                </dl>
+            </section>
+        </footer>
+
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
