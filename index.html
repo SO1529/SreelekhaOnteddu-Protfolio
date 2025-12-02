@@ -171,8 +171,6 @@ Ready to collaborate with forward-thinking teams to build the next generation of
 			<script src="assets/js/main.js"></script>
 		<!DOCTYPE html>
 <html lang="en">
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -180,35 +178,45 @@ Ready to collaborate with forward-thinking teams to build the next generation of
     <style>
         /* Chatbot Button */
         .chatbot-button {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
 
         .chatbot-button:hover {
             transform: scale(1.1);
         }
 
         .chatbot-button svg {
-    width: 26px;
-    height: 26px;
-    fill: white;
-}
+            width: 26px;
+            height: 26px;
+            fill: white;
+        }
 
         /* Popup Tooltip */
         .chatbot-tooltip {
             position: fixed;
-            bottom: 100px;
+            bottom: 96px;
             right: 30px;
             background: white;
-            padding: 15px 20px;
+            padding: 12px 16px;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             z-index: 999;
             display: none;
-            max-width: 250px;
+            max-width: 200px;
             animation: bounceIn 0.5s ease;
         }
 
@@ -248,42 +256,39 @@ Ready to collaborate with forward-thinking teams to build the next generation of
         .chatbot-tooltip p {
             margin: 0;
             color: #333;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 500;
         }
 
         .chatbot-tooltip .close-tooltip {
             position: absolute;
-            top: 5px;
-            right: 8px;
+            top: 4px;
+            right: 6px;
             background: none;
             border: none;
             color: #999;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
             padding: 0;
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             line-height: 1;
         }
 
         /* Chatbot Container */
         .chatbot-container {
             position: fixed;
-            bottom: 100px;
+            bottom: 96px;
             right: 30px;
-            width:400px;
-            max-width: calc(100vw - 60px);
+            width: 350px;
             height: 500px;
-            max-height: calc(100vh - 140px);
-            background: rgba(255, 255, 255, 0.98);
+            background: white;
             border-radius: 15px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             display: none;
             flex-direction: column;
             z-index: 1000;
             overflow: hidden;
-            backdrop-filter: blur(10px);
         }
 
         .chatbot-container.open {
@@ -303,56 +308,61 @@ Ready to collaborate with forward-thinking teams to build the next generation of
         }
 
         /* Header */
-       .chatbot-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 18px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0;
-    gap: 15px;
-}
+        .chatbot-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 16px 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .chatbot-header-text {
+            flex: 1;
+            min-width: 0;
+        }
 
         .chatbot-header h3 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.2;
-}
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
 
-.chatbot-header p {
-    margin: 3px 0 0 0;
-    font-size: 11px;
-    opacity: 0.9;
-    line-height: 1.2;
-}
+        .chatbot-header p {
+            margin: 2px 0 0 0;
+            font-size: 11px;
+            opacity: 0.9;
+            line-height: 1.3;
+        }
 
-     .close-btn {
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 0;
-    width: 28px;
-    height: 28px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    line-height: 1;
-}
+        .close-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 0;
+            width: 28px;
+            height: 28px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            line-height: 1;
+            margin-left: 10px;
+        }
 
-.close-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-}
+        .close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
 
         /* Messages Area */
         .chatbot-messages {
             flex: 1;
-            padding: 20px;
+            padding: 16px;
             overflow-y: auto;
             background: #f5f5f5;
             min-height: 0;
@@ -376,9 +386,8 @@ Ready to collaborate with forward-thinking teams to build the next generation of
         }
 
         .message {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             display: flex;
-            align-items: flex-start;
             animation: fadeIn 0.3s ease;
             clear: both;
         }
@@ -402,15 +411,15 @@ Ready to collaborate with forward-thinking teams to build the next generation of
             justify-content: flex-end;
         }
 
-       .message-content {
-    max-width: 75%;
-    padding: 10px 14px;
-    border-radius: 15px;
-    word-wrap: break-word;
-    word-break: break-word;
-    font-size: 13px;
-    line-height: 1.5;
-}
+        .message-content {
+            max-width: 75%;
+            padding: 10px 14px;
+            border-radius: 15px;
+            word-wrap: break-word;
+            word-break: break-word;
+            font-size: 13px;
+            line-height: 1.5;
+        }
 
         .message.bot .message-content {
             background: white;
@@ -428,13 +437,13 @@ Ready to collaborate with forward-thinking teams to build the next generation of
         /* Typing Indicator */
         .typing-indicator {
             display: none;
-            padding: 12px 16px;
+            padding: 10px 14px;
             background: white;
-            border-radius: 18px;
+            border-radius: 15px;
             border-bottom-left-radius: 4px;
             width: fit-content;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .typing-indicator.active {
@@ -442,12 +451,12 @@ Ready to collaborate with forward-thinking teams to build the next generation of
         }
 
         .typing-indicator span {
-            height: 8px;
-            width: 8px;
+            height: 7px;
+            width: 7px;
             background: #667eea;
             display: inline-block;
             border-radius: 50%;
-            margin-right: 5px;
+            margin-right: 4px;
             animation: typing 1.4s infinite;
         }
 
@@ -464,57 +473,57 @@ Ready to collaborate with forward-thinking teams to build the next generation of
                 transform: translateY(0);
             }
             30% {
-                transform: translateY(-10px);
+                transform: translateY(-8px);
             }
         }
 
         /* Suggested Questions */
         .suggested-questions {
-            padding: 10px 15px;
+            padding: 10px 12px;
             background: #f9f9f9;
             border-top: 1px solid #e0e0e0;
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 6px;
             flex-shrink: 0;
         }
 
         .suggested-question {
-    padding: 8px 14px;
-    background: white;
-    border: 1px solid #667eea;
-    border-radius: 20px;
-    font-size: 12px;
-    color: #667eea;
-    cursor: pointer;
-    transition: all 0.2s;
-    white-space: nowrap;
-    font-weight: 500;
-}
+            padding: 6px 12px;
+            background: white;
+            border: 1px solid #667eea;
+            border-radius: 16px;
+            font-size: 11px;
+            color: #667eea;
+            cursor: pointer;
+            transition: all 0.2s;
+            white-space: nowrap;
+            font-weight: 500;
+        }
 
-.suggested-question:hover {
-    background: #667eea;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
-}
+        .suggested-question:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
 
         /* Input Area */
         .chatbot-input {
-            padding: 15px;
+            padding: 12px;
             background: white;
             border-top: 1px solid #e0e0e0;
             display: flex;
-            gap: 10px;
+            gap: 8px;
             flex-shrink: 0;
         }
 
         .chatbot-input input {
             flex: 1;
-            padding: 12px 15px;
+            padding: 10px 14px;
             border: 1px solid #ddd;
-            border-radius: 25px;
-            font-size: 14px;
+            border-radius: 20px;
+            font-size: 13px;
             outline: none;
             transition: border-color 0.3s;
             min-width: 0;
@@ -525,8 +534,8 @@ Ready to collaborate with forward-thinking teams to build the next generation of
         }
 
         .chatbot-input button {
-            width: 45px;
-            height: 45px;
+            width: 40px;
+            height: 40px;
             border: none;
             border-radius: 50%;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -549,20 +558,18 @@ Ready to collaborate with forward-thinking teams to build the next generation of
         }
 
         .chatbot-input button svg {
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             fill: white;
         }
 
         /* Mobile Responsive */
         @media (max-width: 480px) {
             .chatbot-container {
-                width: 100%;
-                height: 100%;
-                max-height: 100%;
-                bottom: 0;
-                right: 0;
-                border-radius: 0;
+                width: calc(100vw - 20px);
+                height: calc(100vh - 116px);
+                bottom: 96px;
+                right: 10px;
             }
 
             .chatbot-button {
@@ -571,18 +578,13 @@ Ready to collaborate with forward-thinking teams to build the next generation of
             }
 
             .chatbot-tooltip {
-                bottom: 90px;
+                bottom: 86px;
                 right: 20px;
-                max-width: calc(100vw - 100px);
+                max-width: 180px;
             }
 
             .message-content {
-                max-width: 85%;
-            }
-
-            .suggested-question {
-                font-size: 11px;
-                padding: 6px 12px;
+                max-width: 80%;
             }
         }
     </style>
@@ -607,7 +609,7 @@ Ready to collaborate with forward-thinking teams to build the next generation of
     <div class="chatbot-container" id="chatbotContainer">
         <!-- Header -->
         <div class="chatbot-header">
-            <div>
+            <div class="chatbot-header-text">
                 <h3>Ask about Sreelekha</h3>
                 <p>AI-powered resume assistant</p>
             </div>
@@ -623,19 +625,19 @@ Ready to collaborate with forward-thinking teams to build the next generation of
             </div>
         </div>
 
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typingIndicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <!-- Suggested Questions -->
         <div class="suggested-questions" id="suggestedQuestions">
             <div class="suggested-question">What are her skills?</div>
             <div class="suggested-question">Tell me about projects</div>
             <div class="suggested-question">Her experience?</div>
             <div class="suggested-question">Certifications?</div>
-        </div>
-
-        <!-- Typing Indicator -->
-        <div class="typing-indicator" id="typingIndicator">
-            <span></span>
-            <span></span>
-            <span></span>
         </div>
 
         <!-- Input -->
@@ -677,7 +679,7 @@ Ready to collaborate with forward-thinking teams to build the next generation of
                     setTimeout(() => {
                         chatbotTooltip.classList.remove('show');
                     }, 5000);
-                }, 2000); // Show after 2 seconds
+                }, 2000);
             }
         });
 
@@ -689,7 +691,7 @@ Ready to collaborate with forward-thinking teams to build the next generation of
         // Toggle chatbot
         chatbotBtn.addEventListener('click', () => {
             chatbotContainer.classList.toggle('open');
-            chatbotTooltip.classList.remove('show'); // Hide tooltip when opening chat
+            chatbotTooltip.classList.remove('show');
             if (chatbotContainer.classList.contains('open')) {
                 userInput.focus();
             }
@@ -711,7 +713,6 @@ Ready to collaborate with forward-thinking teams to build the next generation of
             messageDiv.appendChild(contentDiv);
             chatMessages.appendChild(messageDiv);
             
-            // Scroll to bottom
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
 
@@ -730,12 +731,10 @@ Ready to collaborate with forward-thinking teams to build the next generation of
         async function sendMessage(question) {
             if (!question.trim()) return;
 
-            // Add user message
             addMessage(question, true);
             userInput.value = '';
             sendBtn.disabled = true;
 
-            // Show typing indicator
             setTyping(true);
 
             try {
@@ -753,10 +752,7 @@ Ready to collaborate with forward-thinking teams to build the next generation of
 
                 const data = await response.json();
                 
-                // Hide typing indicator
                 setTyping(false);
-                
-                // Add bot response
                 addMessage(data.answer || 'Sorry, I couldn\'t process that question.');
 
             } catch (error) {
@@ -790,8 +786,10 @@ Ready to collaborate with forward-thinking teams to build the next generation of
     </script>
 </body>
 </html>
+
 	</body>
 </html>
+
 
 
 
