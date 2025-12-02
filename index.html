@@ -180,32 +180,22 @@ Ready to collaborate with forward-thinking teams to build the next generation of
     <style>
         /* Chatbot Button */
         .chatbot-button {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 20px;
-            height: 60px;
-            border-radius: 20%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            transition: transform 0.3s ease;
-        }
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
 
         .chatbot-button:hover {
             transform: scale(1.1);
         }
 
         .chatbot-button svg {
-            width: 30px;
-            height: 30px;
-            fill: white;
-        }
+    width: 26px;
+    height: 26px;
+    fill: white;
+}
 
         /* Popup Tooltip */
         .chatbot-tooltip {
@@ -313,42 +303,50 @@ Ready to collaborate with forward-thinking teams to build the next generation of
         }
 
         /* Header */
-        .chatbot-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-shrink: 0;
-        }
+       .chatbot-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 15px;
+}
 
         .chatbot-header h3 {
-            margin: 0;
-            font-size: 18px;
-            font-weight: 600;
-        }
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+}
 
-        .chatbot-header p {
-            margin: 5px 0 0 0;
-            font-size: 12px;
-            opacity: 0.9;
-        }
+.chatbot-header p {
+    margin: 3px 0 0 0;
+    font-size: 11px;
+    opacity: 0.9;
+    line-height: 1.2;
+}
 
-      .close-btn {
-    background: none;
+     .close-btn {
+    background: rgba(255, 255, 255, 0.2);
     border: none;
     color: white;
-    font-size: 28px;
+    font-size: 20px;
     cursor: pointer;
     padding: 0;
-    width: 5px;
-    height: 5px;
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     line-height: 1;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
 
         /* Messages Area */
@@ -404,15 +402,15 @@ Ready to collaborate with forward-thinking teams to build the next generation of
             justify-content: flex-end;
         }
 
-        .message-content {
-            max-width: 80%;
-            padding: 12px 16px;
-            border-radius: 18px;
-            word-wrap: break-word;
-            font-size: 14px;
-            line-height: 1.5;
-            white-space: pre-wrap;
-        }
+       .message-content {
+    max-width: 75%;
+    padding: 10px 14px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    word-break: break-word;
+    font-size: 13px;
+    line-height: 1.5;
+}
 
         .message.bot .message-content {
             background: white;
@@ -794,6 +792,7 @@ Ready to collaborate with forward-thinking teams to build the next generation of
 </html>
 	</body>
 </html>
+
 
 
 
