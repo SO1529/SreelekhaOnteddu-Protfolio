@@ -264,9 +264,14 @@ Ready to collaborate with forward-thinking teams to build the next generation of
     border-radius: 20px;
     outline: none;
     font-size: 14px;
-    color: #333;  /* ADD THIS LINE - makes text dark gray */
-    background-color: #fff;  /* ADD THIS LINE - ensures white background */
+    color: #333;
+    background-color: #fff;
 }
+
+.chat-input::placeholder {
+    color: #999;
+}
+
 
 .chat-send {
     margin-left: 8px;
@@ -290,7 +295,7 @@ Ready to collaborate with forward-thinking teams to build the next generation of
     <button class="chat-toggle" onclick="toggleChat()">💬</button>
     <div class="chat-window" id="chatWindow">
         <div class="chat-header">
-            Chat with us
+            Chat with me
         </div>
         <div class="chat-messages" id="chatMessages">
             <div class="message bot">
@@ -381,6 +386,7 @@ function addMessage(text, className) {
 </script>
 	</body>
 </html>
+
 
 
 
