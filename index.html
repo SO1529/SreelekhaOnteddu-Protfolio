@@ -218,6 +218,29 @@ Ready to collaborate with forward-thinking teams to build the next generation of
     color: white;
     padding: 16px;
     font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-close {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.chat-close:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .chat-messages {
@@ -259,27 +282,33 @@ Ready to collaborate with forward-thinking teams to build the next generation of
 
 .chat-input {
     flex: 1;
-    padding: 10px;
+    padding: 10px 14px;
     border: 1px solid #ddd;
     border-radius: 20px;
     outline: none;
     font-size: 14px;
-    color: #333;
-    background-color: #fff;
+    color: #000 !important;  /* FORCED BLACK TEXT */
+    background-color: #ffffff !important;  /* FORCED WHITE BACKGROUND */
+    -webkit-text-fill-color: #000 !important;  /* For Safari/Chrome */
+}
+
+.chat-input:focus {
+    border-color: #667eea;
+    color: #000 !important;
 }
 
 .chat-input::placeholder {
-    color: #999;
+    color: #999 !important;
+    opacity: 1;
 }
-.chat-close {
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
-    color: white;
-    font-size: 14px;
-    cursor: pointer;
-    padding: 6px 12px;
-    border-radius: 15px;
-    transition: background 0.3s;
+
+/* Override any browser autofill styles */
+.chat-input:-webkit-autofill,
+.chat-input:-webkit-autofill:hover,
+.chat-input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #000 !important;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+    background-color: #ffffff !important;
 }
 
 .chat-send {
@@ -291,6 +320,11 @@ Ready to collaborate with forward-thinking teams to build the next generation of
     border-radius: 20px;
     cursor: pointer;
     font-weight: 600;
+    flex-shrink: 0;
+}
+
+.chat-send:hover {
+    background: #5568d3;
 }
 
 .chat-send:disabled {
@@ -395,6 +429,7 @@ function addMessage(text, className) {
 </script>
 	</body>
 </html>
+
 
 
 
