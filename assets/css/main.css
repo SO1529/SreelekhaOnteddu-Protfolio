@@ -3802,3 +3802,14 @@ input, select, textarea {
 			}
 
 		}
+/* Override Stellar's global button styles for chatbot only */
+#chatbotWidget button.chat-toggle,
+#chatbotWidget button.chat-close,
+#chatbotWidget button.chat-send {
+  min-width: unset !important;
+  height: unset !important;
+  line-height: normal !important;
+  padding: 0 !important;
+  border-radius: inherit !important;
+  box-shadow: none !important;
+}
