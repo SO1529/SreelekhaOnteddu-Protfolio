@@ -221,20 +221,22 @@ Ready to collaborate with forward-thinking teams to build the next generation of
 			transform: scale(1.05);
 		}
 
-		.chat-window {
-			display: none;
-			flex-direction: column;
-			position: fixed;
-			bottom: 100px;
-			right: 24px;
-			width: 400px;
-			height: 600px;
-			background: white;
-			border-radius: 20px;
-			box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-			overflow: hidden;
-			animation: slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-		}
+		
+			.chat-window {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  bottom: 96px;
+  right: 24px;
+  width: 380px;
+  max-height: 520px;   /* KEY FIX */
+  height: 70vh;        /* adapts to screen */
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
 
 		@keyframes slideUp {
 			from {
@@ -597,6 +599,7 @@ Ready to collaborate with forward-thinking teams to build the next generation of
 
 	</body>
 </html>
+
 
 
 
