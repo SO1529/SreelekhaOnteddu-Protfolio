@@ -408,6 +408,30 @@ Ready to collaborate with forward-thinking teams to build the next generation of
 				opacity: 1;
 			}
 		}
+			/* Override Stellar's global button styles for chatbot only */
+#chatbotWidget button.chat-toggle,
+#chatbotWidget button.chat-close,
+#chatbotWidget button.chat-send {
+  min-width: unset !important;
+  height: unset !important;
+  line-height: normal !important;
+  padding: 0 !important;
+  border-radius: inherit !important;
+  box-shadow: none !important;
+}
+#chatbotWidget .chat-close {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 6px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+#chatbotWidget .chat-window {
+  height: min(520px, 70vh) !important;
+  width: 380px !important;
+}
+
 
 		.chat-input-container {
 			display: flex;
@@ -599,6 +623,7 @@ Ready to collaborate with forward-thinking teams to build the next generation of
 
 	</body>
 </html>
+
 
 
 
